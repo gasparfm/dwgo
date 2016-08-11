@@ -1,0 +1,9 @@
+0.3 - May 13, 2008 First release
+
+Feb 11, 2009 Some compilers won't compile
+	* Changed <strings> include to <strings.h> and <string.h>
+
+Nov 06, 2010 MySock class bugfixes
+Nov 07, 2010 Dwgo error handling bugfix
+
+0.4 - Nov 22, 2010 Bugfix release

@@ -1,0 +1,21 @@
+Don't Want to Go Outside!! v0.3
+
+My first dockapp, hope you like it!
+
+All you have to do is:
+	* ./configure
+	* make
+	* Copy dwgo.conf to:
+		* ~/.dwgo.conf
+		* ~/.dwgo/dwgo.conf
+	* Edit this file:
+		* AddStation:METAR CODE:Description, just like it is written in that file. You cat get station codes visiting:
+		http://adds.aviationweather.gov/metars/stations.txt
+	* Start the application
+	* Enjoy!
+
+There is still a lot of work to do, some more coding and documentation. If you want to collaborate, please e-mail me and I will post new changes.
+
+Gaspar Fernández
+http://www.totaki.com
+blakeyed@totaki.com

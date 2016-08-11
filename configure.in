@@ -1,0 +1,49 @@
+dnl Begin - configure.in
+AC_INIT(src/dwgo.cpp)
+AC_CONFIG_HEADER(src/config.h)
+
+
+dnl Default CFLAGS
+AC_SUBST(CXXFLAGS)
+if test -z "$CXXFLAGS" ; then
+  CXXFLAGS="-O2"
+fi
+  
+dnl Make sure $prefix != NONE and writes DATADIR in config.h
+if test "$prefix" = "NONE"; then
+  prefix="/usr/local"
+else
+  prefix=$prefix
+fi
+
+eval datadir=\"$datadir\"
+eval datadir=\"$datadir\"
+AC_DEFINE_UNQUOTED(DATADIR, "${datadir}", [Location of platform-independent files])
+
+
+AM_INIT_AUTOMAKE(DWGO, 0.4)
+
+dnl Checks for programs.
+AC_PROG_CXX
+AC_PROG_INSTALL
+
+
+dnl Checks for header files.
+
+AC_PATH_X
+AC_HEADER_STDC
+AC_HEADER_SYS_WAIT
+AC_CHECK_HEADERS([netdb.h netinet/in.h stdlib.h string.h sys/socket.h sys/timeb.h unistd.h])
+
+# Checks for libraries.
+AC_CHECK_LIB([Xext], [XShapeCombineMask])
+AC_CHECK_LIB([Xpm], [XpmCreatePixmapFromData])
+AC_CHECK_LIB([pthread], [pthread_create])
+
+# Checks for functions
+AC_CHECK_FUNCS([bzero gethostbyname memset rint socket strerror strstr strtol tzset])
+
+dnl Add path to config.heval datadir=\"$datadir\"
+
+AC_OUTPUT(Makefile src/Makefile pixmaps/Makefile)
+
