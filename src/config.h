@@ -16,6 +16,9 @@
 /* Define to 1 if you have the `pthread' library (-lpthread). */
 #define HAVE_LIBPTHREAD 1
 
+/* Define to 1 if you have the `X11' library (-lX11). */
+#define HAVE_LIBX11 1
+
 /* Define to 1 if you have the `Xext' library (-lXext). */
 #define HAVE_LIBXEXT 1
 
@@ -97,6 +100,9 @@
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME ""
 
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
+
 /* Define to the version of this package. */
 #define PACKAGE_VERSION ""
 
@@ -104,4 +110,4 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "0.3"
+#define VERSION "0.4"

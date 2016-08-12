@@ -36,6 +36,7 @@ AC_HEADER_SYS_WAIT
 AC_CHECK_HEADERS([netdb.h netinet/in.h stdlib.h string.h sys/socket.h sys/timeb.h unistd.h])
 
 # Checks for libraries.
+AC_CHECK_LIB([X11], [XSetWMHints])
 AC_CHECK_LIB([Xext], [XShapeCombineMask])
 AC_CHECK_LIB([Xpm], [XpmCreatePixmapFromData])
 AC_CHECK_LIB([pthread], [pthread_create])

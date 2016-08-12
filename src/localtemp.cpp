@@ -345,11 +345,11 @@ bool localtemp::getInfo()
 
 	}
       else
-// 	{
+ 	{
 	  this->error=1;		// Not found
       // Print request
-// 	  cout<<http->data<<endl;
-// 	}
+ 	  cout<<http->data<<endl;
+ 	}
     }
   else
     return false;		// If there is a socket error...

@@ -38,6 +38,7 @@
 #include <string>
 #include "XDraw.h"
 #include "errors.h"
+#include <cstring>
 
 using namespace std;
 

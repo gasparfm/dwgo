@@ -1,5 +1,7 @@
 #include <iostream>
 #include "errors.h"
+#include <cstdlib>
+#include <cstdio>
 
 using namespace std;
 

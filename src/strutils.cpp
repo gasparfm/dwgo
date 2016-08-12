@@ -26,6 +26,9 @@
  *    Date       Author     Modification
  *    
  ********************************************************************************/ 
+#include <cstring>
+#include <string>
+
 const std::string whiteSpaces( " \f\n\r\t\v" );
 
 /*************************************************************

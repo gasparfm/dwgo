@@ -2,7 +2,11 @@
 #include <strings.h>
 #include "errors.h"
 
-#define METAR_URL               "http://weather.noaa.gov/pub/data/observations/metar/decoded/%s.TXT"
+// Old URL
+//#define METAR_URL               "http://weather.noaa.gov/pub/data/observations/metar/decoded/%s.TXT"
+
+// New URL
+#define METAR_URL               "http://tgftp.nws.noaa.gov/data/observations/metar/decoded/%s.TXT"
 
 class localtemp {
 public: 
